@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-footer a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+        }
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Employee Registration Form</h2>
+    <form action="register" method="post">
+        <label for="id">Employee ID:</label>
+        <input type="text" name="id" id="id" required>
+
+        <label for="name">Employee Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required>
+
+        <label for="salary">Salary:</label>
+        <input type="number" name="salary" id="salary" required>
+
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" id="gender" required>
+
+        <input type="submit" value="Register">
+    </form>
+    <div class="form-footer">
+        <p>Already registered? <a href="login.html">Login here</a></p>
+    </div>
+</div>
+
+</body>
+</html>
